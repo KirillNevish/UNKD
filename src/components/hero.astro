@@ -1,8 +1,7 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/hero.svg";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon/components";
 ---
 
 <main
@@ -11,42 +10,37 @@ import { Icon } from "astro-icon/components";
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
-      widths={[200, 400, 600]}
+      width={380}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
-      format="avif"
+      format="svg"
     />
   </div>
   <div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Lost money to a scam?
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+      We’ve helped recover over $60 million for U.S. fraud victims. UNKD
+      combines expert support with powerful recovery tools. Start your claim now
+      and begin your journey to recovery.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
+        href="/"
         class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-         Download for Free
+        rel="noopener"
+        target="_blank">
+        ✍️ File Your Claim Today
       </Link>
       <Link
         size="lg"
         style="outline"
         rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
+        href="#claim"
+        class="flex gap-1 items-center justify-center">
+        💼 Trusted by Thousands
       </Link>
     </div>
   </div>

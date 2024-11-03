@@ -1,0 +1,61 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingCard from "@components/pricing.astro";
+import Cta from "@components/cta.astro";
+
+const pricing = [
+  {
+    name: "Stage 1",
+    price: "Investigation",
+    popular: false,
+    features: [
+      "Our team of fraud investigators reviews your case to determine the best course of action. We gather all necessary information and documentation, keeping you informed at every step.",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+  {
+    name: "Stage 2",
+    price: "Bank Submission",
+    popular: false,
+    features: [
+      "UNKD prepares a comprehensive report and submits it directly to your bank, presenting a strong case for reimbursement. Our experts handle all communication with the bank on your behalf.",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+  {
+    name: "Stage 3",
+    price: "Independent Review",
+    popular: false,
+    features: [
+      "If the bank declines reimbursement, we escalate your case to an independent financial authority for review. This final step is aimed at ensuring you receive the compensation you deserve.",
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+];
+---
+
+<Layout title="How It Works">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">How It Works</Fragment>
+      <Fragment slot="desc">Recover lost funds in three simple steps.</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      {pricing.map((item) => <PricingCard plan={item} />)}
+    </div>
+
+    <Cta />
+  </Container>
+</Layout>

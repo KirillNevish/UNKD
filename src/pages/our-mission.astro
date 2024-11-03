@@ -1,0 +1,57 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Our Mission">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Our Mission</Fragment>
+      <Fragment slot="desc">Restoring Your Financial Security.</Fragment>
+    </Sectionhead>
+
+    <div class="flex text-center flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        UNKD – US National Knowledge Defense
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        At UNKD, we’re dedicated to helping individuals recover funds lost to fraud, prioritizing fairness, transparency, and reliable support. As a U.S.-based nonprofit, our focus is on guiding you through the recovery process with integrity and expertise, ensuring you have a strong advocate by your side.
+      </p>
+      <h2 class="font-medium text-2xl text-gray-800 mt-16">Why Choose UNKD?</h2>
+      <p class="text-lg leading-relaxed text-slate-500 mt-3">
+        Recovering What’s Rightfully Yours
+      </p>
+      <span>Losing money to scams is stressful and unsettling. At UNKD, we understand the impact and are here to provide knowledgeable, ethical support every step of the way, helping you reclaim what’s yours with confidence.</span>
+      <h2 class="font-medium text-2xl text-gray-800 mt-16">Our Approach</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-5">
+      <div class="border-2 border-[#D8DEE9] border-opacity-50 py-5 px-6 rounded-md">
+        <p class="text-lg leading-relaxed text-slate-500 mb-3">
+          Dedicated Client Support
+        </p>
+        <span class="pb-3">Our team is committed to providing individualized guidance through the recovery process with empathy and professionalism. We’re here to help you navigate every stage, offering reassurance and expert assistance.</span>
+      </div>
+      <div class="border-2 border-[#D8DEE9] border-opacity-50 py-5 px-6 rounded-md">
+        <p class="text-lg leading-relaxed text-slate-500 mb-3">
+          Advocacy for Systemic Change
+        </p>
+        <span class="pb-3">UNKD goes beyond individual cases to advocate for stronger fraud prevention and better victim protections. Our goal is to make the financial system safer and more resilient for everyone.</span>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div class="py-5 px-6">
+        <h4 class="font-medium text-2xl text-gray-800 mb-5">
+          Our Experience and Dedication
+        </h4>
+        <span>UNKD was founded with a clear mission: to defend and protect individuals from the growing risks of financial fraud. We serve as an independent authority, collaborating with individuals, businesses, and regulators to create positive change. Supported by experts, volunteers, and allies, we envision a future where fraud is rare and consumer rights are respected.</span>
+      </div>
+      <div class="py-5 px-6">
+        <h4 class="font-medium text-2xl text-gray-800 mb-5">
+          Our Pledge
+        </h4>
+        <span>As a nonprofit, all proceeds go directly back into our mission, ensuring our services remain ethical, transparent, and impactful. We’re committed to delivering genuine, accessible recovery services for all, dedicated to making a difference where it matters most.</span>
+      </div>
+    </div>
+  </Container>
+</Layout>
