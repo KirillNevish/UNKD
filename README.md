@@ -1,6 +1,24 @@
 # Figma
 https://www.figma.com/design/8o78yNruMwjDdQhXHsej0j/OSINT?node-id=1-4&t=SQKFY5waBDtLtVbu-1
 
+# 1. Before Installation Use Node 18.17.1
+
+nvm use 18.17.1
+
+# 2. Intallation
+
+yarn install
+
+# 3. Start
+
+yarn start
+
+# 4. Clear cache (if you need)
+
+yarn cache clean
+
+-----------------------------------------------------------
+
 # Astroship - Astro SAAS Starter Website Template
 
 Astroship is a free starter astro website template for saas, startups, marketing websites, landing pages & blogs. Built with Astro & TailwindCSS.
