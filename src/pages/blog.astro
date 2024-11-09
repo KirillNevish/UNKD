@@ -42,11 +42,15 @@ publishedBlogEntries.sort(function (a, b) {
                     class="w-full rounded-md object-cover object-center bg-white"
                   />
                   <div>
-                    <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                    <span
+                      id="blogTitle"
+                      class="text-blue-400 uppercase tracking-wider text-sm font-medium">
                       {blogPostEntry.data.category}
                     </span>
 
-                    <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
+                    <h2
+                      id="blogData"
+                      class="text-3xl  font-semibold leading-snug tracking-tight mt-1 ">
                       {blogPostEntry.data.title}
                     </h2>
 
@@ -71,3 +75,15 @@ publishedBlogEntries.sort(function (a, b) {
     </main>
   </Container>
 </Layout>
+
+<style>
+  #blogData {
+    color: #f8f8f8;
+  }
+  #blogTitle {
+    color: #0ff4c6;
+  }
+  h2 {
+    color: #f8f8f8;
+  }
+</style>

@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
 <Layout title={frontmatter.title}>
   <Container>
     <div class="mx-auto max-w-[735px] mt-14">
-      <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+      <span id="Category" class="uppercase tracking-wider text-sm font-medium">
         {frontmatter.category}
       </span>
       <h1
@@ -47,3 +47,17 @@ const { frontmatter } = Astro.props;
     </div>
   </Container>
 </Layout>
+
+<style>
+  #Category {
+    color: #0ff4c6;
+  }
+  a {
+    background-color: #0ff4c6;
+    color: #29292a;
+  }
+  a:hover {
+    background-color: #00e6b3;
+    color: #29292a;
+  }
+</style>

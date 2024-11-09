@@ -6,7 +6,13 @@ const { align = "center" } = Astro.props;
   <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
     <slot name="title">UNKD</slot>
   </h1>
-  <p class="text-lg mt-4 text-slate-600">
+  <p class="text-lg mt-4 text-white">
     <slot name="desc">UNKD | We are help return money</slot>
   </p>
 </div>
+
+<style>
+  h1 {
+    color: white;
+  }
+</style>
