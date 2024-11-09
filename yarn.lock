@@ -385,6 +385,11 @@
   resolved "https://registry.npmjs.org/@fontsource-variable/inter/-/inter-5.1.0.tgz"
   integrity sha512-Wj2dUGP0vUpxRGQTXQTCNJO+aLcFcQm+gUPXfj/aS877bQkEPBPv9JvZJpwdm2vzelt8NTZ+ausKlBCJjh2XIg==
 
+"@fontsource/jura@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/@fontsource/jura/-/jura-5.1.0.tgz"
+  integrity sha512-/mz9uo4CUSV0R+jrucZXNMAC6eKa33RHJxxsUZTKkIO17h1lvrpHz3UgNLdQXXI8itF0i6QDkMLz2hOLhDcXNw==
+
 "@iconify-json/bx@^1.1.10":
   version "1.2.1"
   resolved "https://registry.npmjs.org/@iconify-json/bx/-/bx-1.2.1.tgz"
@@ -3437,7 +3442,12 @@ preferred-pm@^4.0.0:
     find-yarn-workspace-root2 "1.2.16"
     which-pm "^3.0.0"
 
-"prettier@^2.2 || ^3.0", prettier@^3.0.0, prettier@2.8.7:
+"prettier@^2.2 || ^3.0", prettier@^3.0.0:
+  version "3.3.3"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-3.3.3.tgz"
+  integrity sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==
+
+prettier@2.8.7:
   version "2.8.7"
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.7.tgz"
   integrity sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==
